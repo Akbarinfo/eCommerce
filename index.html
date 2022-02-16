@@ -1,38 +1,765 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Title</title>
+  <title>eCommerce</title>
 </head>
+
 <body>
 
-<!-- HEADER PART  -->
-<section id="header-site"></section>
-<header>
+  <!-- HEADER PART  -->
+  <header>
+    <section class="header">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex col-lg-4 justify-content-between">
+            <a class="header__link" href="#">Chat with us</a>
+            <a class="header__link text-black" href="tel: +420336775664">+420 336 775 664</a>
+            <a class="header__link text-black" href="mailto: info@freshnesecom.com">info@freshnesecom.com</a>
+          </div>
+          <div class="d-flex col-2 justify-content-between">
+            <a class="header__link" href="#">Blog</a>
+            <a class="header__link" href="#">About Us</a>
+            <a class="header__link" href="#">Careers</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</header>
-<!-- HEADER PART END -->
+    <section class="site-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+          <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+          <div class="collapse navbar-collapse col-5" id="navbarScroll">
+            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item dropdown">
+                <a class="nav-link text-black fs-6 fw-bold " href="#" id="navbarScrollingDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  All categories <i class='bx bxs-chevron-down icon-chevron-down'></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
 
-<!-- MAIN PART  -->
+            </ul>
+            <form class="navbar__form d-flex" action="https://echo.htmlacademy.ru">
+              <label for="search">
+                <input class="form-controlme-2" type="search" placeholder="Search Products, categories ..."
+                  aria-label="Search">
+              </label>
+              <button class="navbar__btn" type="submit"><i class='bx bx-search bx-flip-horizontal'></i></button>
+            </form>
+          </div>
+          <div class="navbar__box d-flex col-lg-1 justify-content-between">
+            <a class="navbar__users" href="#"><i class='bx bx-user icon-users'></i></a>
+            <a class="navbar__shop" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" href="#"><i class='bx bx-shopping-bag icon-bag'></i></a>
+          </div>
+        </nav>
+      </div>
 
-<main>
 
-</main>
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          ...
+        </div>
+      </div>
+    </section>
 
-<!-- MAIN PART END -->
+    <!-- HERO CATEGORY  -->
 
-<!-- FOOTER PART -->
+    <section class="hero">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="dropdown">
+            <button class="btn hero__btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Bakery <i class='bx bxs-chevron-down icon-hero-down'></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
 
-<footer>
+          <div class="dropdown">
+            <button class="btn hero__btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Fruit and vegetables <i class='bx bxs-chevron-down icon-hero-down'></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
 
-</footer>
+          <div class="dropdown">
+            <button class="btn hero__btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Meat and fish <i class='bx bxs-chevron-down icon-hero-down'></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
 
-<!-- FOOTER PART END -->
+          <div class="dropdown">
+            <button class="btn hero__btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Drinks <i class='bx bxs-chevron-down icon-hero-down'></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn hero__btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Kitchen <i class='bx bxs-chevron-down icon-hero-down'></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn hero__btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Special nutrition <i class='bx bxs-chevron-down icon-hero-down'></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn hero__btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Baby <i class='bx bxs-chevron-down icon-hero-down'></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn hero__btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pharmacy <i class='bx bxs-chevron-down icon-hero-down'></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- HEADER PART END -->
+
+  <!-- MAIN PART  -->
+
+  <main>
+
+    <!-- Category menu part  -->
+
+    <section class="category">
+      <div class="container">
+        <div class="d-flex">
+          <div class="category__box col-3">
+            <h2 class="category__title">Category menu</h2>
+            <ul class="category__list">
+              <li class="category__item"><a class="category__link" href="#">Bakery</a></li>
+              <li class="category__item"><a class="category__link" href="#">Fruit and vegetables</a></li>
+              <li class="category__item"><a class="category__link" href="#">Meat and fish</a></li>
+              <li class="category__item"><a class="category__link" href="#">Drinks</a></li>
+              <li class="category__item"><a class="category__link" href="#">Kitchen</a></li>
+            </ul>
+            <div class="btn-group dropend">
+              <button type="button" class="btn category__btn" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropright <i class='bx bxs-chevron-right icon-rights'></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between flex-grow-1">
+            <div class="card category__card">
+              <h5 class="card-title card__title">Banner subfocus</h5>
+              <p class="card-text card__text">Space for heading</p>
+              <a href="#" class="btn card__btn">Read recepies</a>
+            </div>
+            <div class="card category__card">
+              <h5 class="card-title card__title">Banner subfocus</h5>
+              <p class="card-text card__text">Space for heading</p>
+              <a href="#" class="btn card__btn">Read recepies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best seling products -->
+
+    <div class="container">
+      <div class="container-fluid cont">
+        <div class="best">
+          <div class="kitchem d-flex col-xs-12">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+              <h2 class="best__title mb-3">
+                Best selling products
+              </h2>
+              <ul class="best__list">
+                <li class="best__item mb-2">
+                  <a class="best__link" href="#">
+                    Kitchen
+                  </a>
+                </li>
+                <li class="best__item mb-2">
+                  <a class="best__link" href="#">
+                    Meat and fish
+                  </a>
+                </li>
+                <li class="best__item mb-2">
+                  <a class="best__link" href="#">
+                    Special nutrition
+                  </a>
+                </li>
+                <li class="best__item mb-2">
+                  <a class="best__link" href="#">
+                    Pharmacy
+                  </a>
+                </li>
+                <li class="best__item mb-5">
+                  <a class="best__link" href="#">
+                    Baby
+                  </a>
+                </li>
+              </ul>
+              <div>
+                <a class="more-btn btn d-flex align-items-center" href="#">
+                  More products
+                  <i class='bx bx-chevron-right icon-rights'></i>
+                </a>
+              </div>
+            </div>
+            <ul class="best__boxs d-flex">
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4 me-4">
+                <div class="box">
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      1.48 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4 me-4">
+                <div class="box">
+                  <span class="box__d">- 36 %</span>
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      0.28 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+                  <span class="box__ops">48.56</span>
+                </div>
+              </li>
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4">
+                <div class="box">
+                  <span class="box__d">- 36 %</span>
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      1.12 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+                  <span class="box__ops">48.56</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-fluid cont">
+        <div class="best">
+          <div class="kitchem d-flex col-xs-12">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+              <h2 class="best__title mb-3">
+                Best selling products
+              </h2>
+              <ul class="best__list">
+                <li class="best__item mb-2">
+                  <a class="best__link" href="#">
+                    Kitchen
+                  </a>
+                </li>
+                <li class="best__item mb-2">
+                  <a class="best__link" href="#">
+                    Meat and fish
+                  </a>
+                </li>
+                <li class="best__item mb-2">
+                  <a class="best__link" href="#">
+                    Special nutrition
+                  </a>
+                </li>
+                <li class="best__item mb-2">
+                  <a class="best__link" href="#">
+                    Pharmacy
+                  </a>
+                </li>
+                <li class="best__item mb-5">
+                  <a class="best__link" href="#">
+                    Baby
+                  </a>
+                </li>
+              </ul>
+              <div>
+                <a class="more-btn btn d-flex align-items-center" href="#">
+                  More products
+                  <i class='bx bx-chevron-right icon-rights'></i>
+                </a>
+              </div>
+            </div>
+            <ul class="best__boxs d-flex">
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4 me-4">
+                <div class="box">
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      1.48 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4 me-4">
+                <div class="box">
+                  <span class="box__d">- 36 %</span>
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      0.28 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+                  <span class="box__ops">48.56</span>
+                </div>
+              </li>
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4">
+                <div class="box">
+                  <span class="box__d">- 36 %</span>
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      1.12 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+                  <span class="box__ops">48.56</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Slayder part  -->
+
+    <section class="our">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2 class="our__title">Our customers says</h2>
+          <a class="our__link" href="#">Button <i class='bx bx-chevron-right green-right'></i></a>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item d-flex justify-content-around active col-lg-5">
+             <div class="our__item col-lg-3">
+                <p class="our__text">“ This is an super space for your customers qoute. Don't worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                <h3 class="our__name">Name and Surname</h3>
+             </div>
+
+            </div>
+
+            <div class="carousel-item d-flex justify-content-around col-lg-5">
+              <div class="our__item col-lg-3">
+                 <p class="our__text">“ This is an super space for your customers qoute. Don't worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                 <h3 class="our__name">Name and Surname</h3>
+              </div>
+
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- HEADLINE PART  -->
+
+    <div class="container">
+      <div class="container-fluid cont">
+        <div class="best">
+          <div class="d-flex justify-content-between">
+            <h2 class="our__title">Section Headline</h2>
+            <a class="our__link" href="#">Button <i class='bx bx-chevron-right green-right'></i></a>
+          </div>
+          <div class="kitchem d-flex col-xs-12">
+            <ul class="best__boxs d-flex">
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4 me-4">
+                <div class="box">
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      1.48 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4 me-4">
+                <div class="box">
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      1.48 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4 me-4">
+                <div class="box">
+                  <span class="box__d">- 36 %</span>
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      0.28 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+                  <span class="box__ops">48.56</span>
+                </div>
+              </li>
+              <li class="best__itembox col-xs-12 col-md-6 col-lg-4">
+                <div class="box">
+                  <span class="box__d">- 36 %</span>
+                  <h3 class="box__title">
+                    Product Title
+                  </h3>
+                  <p class="box__text">
+                    Space for a small product description
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="box__span">
+                      1.12 USD
+                    </span>
+                    <div class="best__buttons">
+                      <a class="best__btn btn" href="#">Buy now</a>
+                    </div>
+                  </div>
+                  <span class="box__ops">48.56</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOG POST  -->
+
+    <section class="blog">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2 class="our__title">Read our Blog posts</h2>
+          <a class="our__link" href="#">Go to Blog <i class='bx bx-chevron-right green-right'></i></a>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <div class="blog__box col-xl-5">
+            <span class="blog__tips">Dinner tips</span>
+            <div class="blog__tips-box">
+              <h2 class="blog__tips-title">Our chef tips for a great and tasty dinner ready in 20 minutes</h2>
+              <div class="d-flex align-items-center">
+                <img class="blog__tips-avatar" src="img/slayder-avatar.png" alt="avatar"> <p class="blog__tips-author m-1 text-white">Author</p>
+                <p class="blog__tips-data m-1 text-white">17.6.2020</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__card card col-xl-3" style="width: 18rem;">
+            <img src="img/blog-card-img.jpg" class="card-img-top" alt="blog">
+            <div class="card-body">
+              <span class="blog__card-cate">Vegetable</span>
+              <h3 class="blog__card-title card-text mb-3">Which vegetable your family will love and want's eat each day</h3>
+
+              <p class="blog__card-author">Author<span class="ms-4">15.6.2020</span></p>
+            </div>
+          </div>
+
+          <ul class="blog__list col-xl-4">
+            <li class="item d-flex mb-5">
+              <div class="flex-column">
+                <h2 class="blog__title mb-3">Salat is kinda good start to your morning routines</h2>
+                <p class="blog__card-author">Author<span class="ms-4">14.1.2020</span></p>
+              </div>
+              <div class="blog__imgbox ms-4">
+                <img class="blog__img" src="img/blog-1-img.png" alt="rasm">
+              </div>
+            </li>
+
+            <li class="item d-flex mb-5">
+              <div class="flex-column">
+                <h2 class="blog__title mb-3">Our chef tips for a great and healthy breakfast</h2>
+                <p class="blog__card-author">Author<span class="ms-4">14.1.2020</span></p>
+              </div>
+              <div class="blog__imgbox ms-4">
+                <img class="blog__img" src="img/blog-2-img.png" alt="rasm">
+              </div>
+            </li>
+
+            <li class="item d-flex mb-5">
+              <div class="flex-column">
+                <h2 class="blog__title mb-3">Prepare a simple and delicious breads</h2>
+                <p class="blog__card-author">Author<span class="ms-4">14.1.2020</span></p>
+              </div>
+              <div class="blog__imgbox ms-4">
+                <img class="blog__img" src="img/blog-3-img.png" alt="rasm">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- MAIN PART END -->
+
+  <!-- FOOTER PART -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="d-flex justify-content-between mb-5">
+        <ul class="footer__list">
+          <li class="footer__item">Get in touch </li>
+          <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Press Releases</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">Connections </li>
+          <li class="footer__item"><a href="#" target="_blank" class="footer__link">Facebook</a></li>
+          <li class="footer__item"><a href="#" target="_blank" class="footer__link">Twitter</a></li>
+          <li class="footer__item"><a href="#" target="_blank" class="footer__link">Instagram</a></li>
+          <li class="footer__item"><a href="#" target="_blank" class="footer__link">Youtube</a></li>
+          <li class="footer__item"><a href="#" target="_blank" class="footer__link">LinkedIn</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">Earnings </li>
+          <li class="footer__item"><a href="#" class="footer__link">Become an Affiliate</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Advertise your product</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Sell on Market</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">Account </li>
+          <li class="footer__item"><a href="#" class="footer__link">Your account</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Returns Centre</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">100 % purchase protection</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Chat with us</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+        </ul>
+
+      </div>
+
+      <div class="flex-column mb-5">
+        <h2 class="footer__tags">Product tags</h2>
+          <div class="btn-group flex-wrap" role="group" aria-label="Basic example">
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Beans</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Carrots</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Apples</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Garlic</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Mushrooms</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Tomatoes</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Chilli peppers</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Watermelons</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Oranges</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Bananas</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Grapes</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Cherries</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Meat</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Seo tag</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Fish</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Seo tag</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Fresh food</button>
+            <button type="button" class="btn m-1 rounded-pill p-1 text-black fw-bolder btn-col">Lemons</button>
+          </div>
+        </div>
+
+      <p class="footer__copy">Copyright © 2020 petrbilek.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FOOTER PART END -->
 
 </body>
+
 </html>
